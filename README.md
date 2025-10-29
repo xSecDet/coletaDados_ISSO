@@ -49,8 +49,8 @@ Este projeto realiza a automação da coleta de dados elétricos (tensão fase-n
         SENHA=sua_senha_segura
 
 5. **Baixar o driver do MS Edge**:
-    Coloque o msedgedriver.exe na pasta "driver", na raiz do projeto.
-    Verifique se o caminho no código está correto: service = Service('./driver/msedgedriver.exe')
+    Coloque o msedgedriver.exe na pasta raiz do projeto.
+    Verifique se o caminho no código está correto: service = Service('./msedgedriver.exe')
 
 6. **Verificar caminhos**:
     Verifique o caminho da planilha em que serão gravados os dados

@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 import os
 import time
 
-planilha_controle = r"caminho_da_sua_planilha\exemplo.xlsx" 
+planilha_controle = r"caminho_da_planilha\exemplo.xlsx" 
 
 # Carrega variáveis do .env
 load_dotenv()
