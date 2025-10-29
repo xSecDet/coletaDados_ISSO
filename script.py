@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 import os
 import time
 
-planilha_controle = r"W:\Manutencao\Elétrica\DOCUMENTOS_GERAIS\ANÁLISES\Consumo por Gramatura\teste.xlsx" 
+planilha_controle = r"caminho_da_sua_planilha\exemplo.xlsx" 
 
 # Carrega variáveis do .env
 load_dotenv()
@@ -238,6 +238,7 @@ def colar_dados(caminho_planilha, tensao_fn, tensao_ff, corrente):
         # Garante que todas as listas tenham o mesmo número de linhas
         total_linhas = min(len(tensao_fn), len(tensao_ff), len(corrente))
 
+        #Verificar as colunas desejadas para gravação dos dados!!
         for i in range(total_linhas):
             # Fase-neutro → I, J, K
             ws[f"I{linha+i}"] = tensao_fn[i][0]

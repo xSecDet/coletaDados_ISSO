@@ -52,7 +52,14 @@ Este projeto realiza a automação da coleta de dados elétricos (tensão fase-n
     Coloque o msedgedriver.exe na pasta "driver", na raiz do projeto.
     Verifique se o caminho no código está correto: service = Service('./driver/msedgedriver.exe')
 
-6. **Execute o script principal**:
+6. **Verificar caminhos**:
+    Verifique o caminho da planilha em que serão gravados os dados
+    Certifique de que serão gravados nas colunas correspondentes, caso seja diferente, alterar no código
+        - (I, J, K -> fase-neutro)
+        - (L, M, N -> fase-fase)
+        - (O, P, Q -> correntes)
+
+7. **Execute o script principal**:
     python script.py
 
 📌 Observações
